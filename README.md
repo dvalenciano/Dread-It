@@ -4,15 +4,17 @@ Sports Update Center
 
 ### Date: 8/25/2021
 
-#### By: [Brandon Hernandez](https://github.com/brandonhernandez123) [Sam Bassong](https://github.com/sbassong) [Derek Valenciano](https://github.com/dvalenciano)
+#### By: [Brandon Hernandez](https://github.com/brandonhernandez123) | [Sam Bassong](https://github.com/sbassong) | [Derek Valenciano](https://github.com/dvalenciano)
 
 ---
 
 **_Description_**
 
-This project is to show the understanding of fullstack web development from start to finish
+This project is to show the understanding of fullstack web development from start to finish.
 
-You can access the game by following this [link!]()
+The idea behind this project is to show the result of a 24 hour hackathon styled project. The basis idesa of this project was modeled from the Reddit forum and contains articles that pertain to current sporting topics. Think ESPN The Ocho
+
+You can access the App by following this [link!]()
 
 **_Technologies Used_**
 
@@ -21,20 +23,20 @@ You can access the game by following this [link!]()
 - Express
 - Mongoose
 
-**_Getting Started_**
-
-The idea behind this project is to show the result of a 24 hour hackathon styled project. The basis idesa of this project was modeled from the Reddit forum and contains articles that pertain to current sporting topics. Think ESPN The Ocho
-
 **_Screenshots_**
 
 Below are snippets of the early workings that indicate the beginning level of building a can online application using a fullstack method
 
+Entity Relationship Diagram
 ![Entity Relationship Diagram](ERD.png)
 
+Component Hiearchy Diagram
 ![Component Hiearchy Diagram](HAD.png)
 
+Mock Up Main
 ![Mock Up Main](Main_Component.png)
 
+Mock Up Post
 ![Mock Up Post](Post.png)
 
 **_Future Updates_**
