@@ -4,7 +4,7 @@ Sports Update Center
 
 ### Date: 8/25/2021
 
-#### By: [link!](https://github.com/brandonhernandez123) [link!](https://github.com/sbassong) [link!](https://github.com/dvalenciano)
+#### By: [Brandon Hernandez](https://github.com/brandonhernandez123) [Sam Bassong](https://github.com/sbassong) [Derek Valenciano](https://github.com/dvalenciano)
 
 ---
 
