@@ -250,7 +250,7 @@ const main = async () => {
     }
   ]
   await SoccerArticle.insertMany(soccerArticles)
-  console.log('Soccer Articles added to db')
+  console.log('Boxing Articles added to db')
 }
 
 const run = async () => {
