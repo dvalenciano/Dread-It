@@ -1,41 +1,17 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios'
+import React from 'react'
 import Trending from '../components/Trending'
-import BASE_URL from '../../globals'
 
-export default function Homepage() {
-  const [soccerPosts, setSoccer] = useState({})
-  const [footballPosts, setFootball] = useState({})
-  const [boxingPosts, setBoxing] = useState({})
 
-  const getSoccer = async () => {
-    const res = await axios.get(`${BASE_URL}/`)
-    console.log(res)
-    setSoccer(res)
-  }
-  const getFootball = async () => {
-    const res = await axios.get(`${BASE_URL}/`)
-    console.log(res)
-    setFootball(res)
-  }
-  const getBoxing = async () => {
-    const res = await axios.get(`${BASE_URL}/`)
-    console.log(res)
-    setBoxing(res)
-  }
-
-  useEffect(() => {
-    // getSoccer()
-    // getFootball()
-    // getBoxing()
-  }, [])
+const Homepage = ({soccerArticles, footballArticles, boxingArticles}) => {
+  
 
   return(
     <div className='homepage'>
-      <Trending {...soccerPosts[Math.ceil(Math.random()*10)]}/>
-      <Trending {...footballPosts[Math.ceil(Math.random()*10)]}/>
-      <Trending {...boxingPosts[Math.ceil(Math.random()*10)]}/>
+      <Trending post={soccerArticles[Math.ceil(Math.random()*soccerArticles.length)]}/>
+      <Trending post={footballArticles[Math.ceil(Math.random()*footballArticles.length)]}/>
+      <Trending post={boxingArticles[Math.ceil(Math.random()*boxingArticles.length)]}/>
     </div>
   )
 }
 
+export default Homepage
