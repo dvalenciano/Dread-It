@@ -388,7 +388,9 @@ const main = async () => {
     }
   ]
 
+
   await FootballArticle.insertMany(footballArticles)
+
   console.log('Football articles added')
 }
 const run = async () => {
