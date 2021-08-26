@@ -1,4 +1,7 @@
 const post = require('../models/post')
+const SoccerArticle = require('../models')
+const BoxingArticle = require('../models')
+const FootballArticle = require('../models')
 
 const getBoxing = async (req, res) => {
   const boxing = await BoxingArticle.find()
