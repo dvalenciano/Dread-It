@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Comment() {
+const Comment = () => {
   return (
     <div className='comment'>
       <input type="text" className='name-input' /> 
@@ -9,3 +9,5 @@ export default function Comment() {
     </div>
   )
 }
+
+export default Comment

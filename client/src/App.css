@@ -1,4 +1,25 @@
-.App {
+* {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
 }
 
+.App {
+  height: auto;
+  width: auto;
+  margin: 5px;
+}
+
+.nav {
+  display: flex;
+}
+
+.left-nav {
+  align-self: flex-start;
+}
+
+.right-nav {
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+}

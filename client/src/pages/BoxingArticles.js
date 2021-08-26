@@ -1,28 +1,15 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios'
-import BASE_URL from '../../globals'
 import Article  from '../components/Article'
 
-export default function BoxingArticles() {
-  const [articles, setArticles] = useState({})
-
-  const getArticles = async () => {
-    const res = await axios.get(`${BASE_URL}/`)
-    console.log(res)
-    setArticles(res)
-  }
-
-  useEffect(() => {
-    // getArticles()
-  }, [])
-
+const BoxingArticles = ({boxingArticles}) => {
   return(
     <div>
       {
-        articles.map(article => (
+        boxingArticles.map(article => (
           <Article {...article}/>
         ))
       }
     </div>
   )
 }
+
+export default BoxingArticles

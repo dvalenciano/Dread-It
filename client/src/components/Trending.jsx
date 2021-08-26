@@ -1,11 +1,13 @@
 import React from 'react'
 
-export default function Trending(props) {
+const Trending = ({post}) => {
   
   return (
     <div className='trending'>
-      <img src={props.image} alt="" />
-      <h3>{props.title}</h3> {/*needs anchor tag for link? */}
+      <img src={post.image} alt="" />
+      <h3>{post.title}</h3> 
     </div>
   )
 }
+
+export default Trending

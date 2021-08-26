@@ -1,7 +1,8 @@
 import React from 'react'
 import Comment from './Comment'
 
-export default function Article(props) {
+const Article = (props) => {
+
   return (
     <div className='article'>
       <h2>{props.title}</h2>
@@ -11,3 +12,5 @@ export default function Article(props) {
     </div>
   )
 }
+
+export default Article
