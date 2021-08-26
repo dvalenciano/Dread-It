@@ -2,12 +2,9 @@ const express = require('express')
 const logger = require('morgan')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-<<<<<<< HEAD
-const { FootballArticle } = require('./models/')
-const { SoccerArticle } = require('./models')
-const { BoxingArticle } = require('./models')
-=======
->>>>>>> 37f7703e72e01ffbafc9dad44de43a7785aff57f
+
+const { Post } = require('./models')
+
 
 const PORT = process.env.PORT || 3001
 
@@ -24,17 +21,33 @@ app.get('/', (request, response) => {
   response.send({ msg: 'Server Running' })
 })
 
-app.get('/boxing', topicController.getBoxing)
+//getArticles
+app.get('/articles', async (req, res) => {
+  console.log('this func has fired')
+  const articles = await Post.find({})
+  if (articles) {
+    console.log(articles)
+    res.json(articles)
+  } else {
+    console.log('nothing found')
+  }
+})
 
-app.get('/football', topicController.getFootball)
+//getOneArticle
 
-app.get('/soccer', topicController.getSoccer)
+// app.get('/articles', topicController.getArticles)
 
-app.get('/boxing/articles', topicController.getArticleBoxing)
+// app.get('/boxing', topicController.getBoxing)
 
-app.get('/football/articles', topicController.getArticleFootball)
+// app.get('/football', topicController.getFootball)
 
-app.get('/soccer/articles', topicController.getArticleSoccer)
+// app.get('/soccer', topicController.getSoccer)
+
+// app.get('/boxing/articles', topicController.getArticleBoxing)
+
+// app.get('/football/articles', topicController.getArticleFootball)
+
+// app.get('/soccer/articles', topicController.getArticleSoccer)
 
 // End Your Code Here
 app.listen(PORT, () => console.log(`Server Listening on port: ${PORT}`))
