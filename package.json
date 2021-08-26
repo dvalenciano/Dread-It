@@ -1,5 +1,31 @@
 {
+  "name": "dread-it",
+  "version": "1.0.0",
+  "description": "Sports Update Center",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvalenciano/Dread-It.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvalenciano/Dread-It/issues"
+  },
+  "homepage": "https://github.com/dvalenciano/Dread-It#readme",
   "dependencies": {
-    "axios": "^0.21.1"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+
   }
 }
