@@ -1,6 +1,5 @@
-const db = require('../db')
+const db = require('../db').default
 const { FootballArticle } = require('../models')
-const mongoose = require('mongoose')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -387,7 +386,6 @@ const main = async () => {
         Hurst is the third offensive lineman recruit to commit to the Rebels, and he was recruited by offensive line coach Jake Thornton and cornerbacks coach Terrell Buckley.`
     }
   ]
-
 
   await FootballArticle.insertMany(footballArticles)
 
