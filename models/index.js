@@ -1,13 +1,9 @@
 const mongoose = require('mongoose')
 const PostSchema = require('./post')
 
-const SoccerArticle = mongoose.model('soccerArticles', PostSchema)
-const FootballArticle = mongoose.model('footballArticles', PostSchema)
-const BoxingArticle = mongoose.model('boxingArticles', PostSchema)
+const Post = mongoose.model('posts', PostSchema)
 
 module.exports = {
-  SoccerArticle,
-  FootballArticle,
-  BoxingArticle
+  Post
 }
 //update

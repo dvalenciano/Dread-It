@@ -2,9 +2,12 @@ const express = require('express')
 const logger = require('morgan')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+<<<<<<< HEAD
 const { FootballArticle } = require('./models/')
 const { SoccerArticle } = require('./models')
 const { BoxingArticle } = require('./models')
+=======
+>>>>>>> 37f7703e72e01ffbafc9dad44de43a7785aff57f
 
 const PORT = process.env.PORT || 3001
 

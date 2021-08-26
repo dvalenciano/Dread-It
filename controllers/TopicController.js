@@ -4,13 +4,21 @@ const { SoccerArticle } = require('../models')
 const { BoxingArticle } = require('../models')
 
 const getBoxing = async (req, res) => {
+  console.log('this func has fired')
   const boxing = await BoxingArticle.find()
-  res.json(boxing)
+  if (boxing) {
+    console.log(boxing)
+  } else {
+    console.log('nothing found')
+  }
+  // console.log(boxing)
+  // res.json(boxing)
 }
 
 const getSoccer = async (req, res) => {
   const soccer = await SoccerArticle.find()
-  res.json(soccer)
+  console.log(soccer)
+  // res.json(soccer)
 }
 
 const getFootball = async (req, res) => {

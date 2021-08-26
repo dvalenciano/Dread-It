@@ -13,6 +13,10 @@ const Post = new Schema(
     content: {
       type: String,
       required: true
+    },
+    category: {
+      type: String,
+      required: true,
     }
   },
   { timestamps: true }
