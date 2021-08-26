@@ -1,4 +1,4 @@
-const db = require('../db')
+const db = require('../db').default
 const { SoccerArticle } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
@@ -250,7 +250,7 @@ const main = async () => {
     }
   ]
   await SoccerArticle.insertMany(soccerArticles)
-  console.log('Boxing Articles added to db')
+  console.log('Soccer Articles added to db')
 }
 
 const run = async () => {

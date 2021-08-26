@@ -2,7 +2,8 @@ const mongoose = require('mongoose')
 
 let MONGODB_URI = 'mongodb://127.0.0.1:27017/dreaditDatabase'
 
-connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true })
+mongoose
+  .connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true })
   .then(() => {
     console.log('Successfully connected to MongoDB.')
   })
@@ -10,6 +11,6 @@ connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true })
     console.error('Connection error', e.message)
   })
 
-const db = connection
+const db = mongoose.connection
 
 module.exports = db
