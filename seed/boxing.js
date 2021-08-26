@@ -4,6 +4,7 @@ const { BoxingArticle } = require('../models/')
 const main = async () => {
   const boxingArticles = [
     {
+      category: 'Boxing',
       title: `De La Hoya Not Interested In Canelo Fight Anymore, Wants Trinidad, Mayweather Rematches Instead`,
       image: `https://www.boxingscene.com/uploads/oscar-de-la-hoya%20(18).jpg`,
       content: `LOS ANGELES — After kickstarting an adamant campaign to fight the superstar he long-promoted, Oscar De La Hoya now has a change of heart on facing Canelo Alvarez as he begins his boxing comeback tour at the age of 48. 
@@ -29,6 +30,8 @@ const main = async () => {
             Trinidad handed De La Hoya his first career loss in 1999 in a razor-thin majority decision. Mayweather scored a split decision of De La Hoya in 2007.`
     },
     {
+      category: 'Boxing',
+
       title: `Wilder Will Not Be Looking For One Shot With Fury, Says Sparring Partner`,
       image: `https://www.boxingscene.com/uploads/deontay-wilder-hafey%20(24)_1625084943.jpg`,
 
@@ -51,6 +54,8 @@ const main = async () => {
             "I think one of the mishaps he had before was thinking, 'Guys have to be perfect for a whole 12 rounds, all it takes for me is one second to change the fight'. Even though that's true, it can go either way, it is heavyweight boxing and one punch can change the fight for Deontay or Fury. Trying those things and working on them and actually executing them on fight night is what is going to tell how this fight is really going to be. From my point of view, he's definitely working on new things."`
     },
     {
+      category: 'Boxing',
+
       title: `WBA Eliminates Interim Titles Effective Immediately`,
       image: `https://www.boxingscene.com/uploads/wba-belt_2020_10_15_043938.jpg`,
       content: `The number of recognized titlists in the sport is set to dramatically decrease.
@@ -88,6 +93,8 @@ const main = async () => {
         Separate resolutions for each weight division are expected in the coming days. Updated policies regarding “Super” champions—including how they are crowned—are also due in the foreseeable future.`
     },
     {
+      category: 'Boxing',
+
       title: `Victor Ortiz: I Thought I Won, It Is What It Is, I Was Never Hurt`,
       image: `https://img.bleacherreport.net/img/images/photos/003/916/811/hi-res-fda6f4bc92d082251a8310373c3fa480_crop_north.jpg?1629612537&w=3072&h=2048`,
       content: `T-Mobile Arena, Las Vegas - “Vicious” Victor Ortiz (32-7-3, 25 KOs) was not happy with the scoring of his ten round unanimous decision loss to Robert “The Ghost” Guerrero (37-6-1, 20 KOs).
@@ -111,6 +118,8 @@ const main = async () => {
         Although he's only 34-years-old, Ortiz has only averaged one fight per year from 2015 to 2018. Ortiz's boxing future is now in limbo, with a long road ahead if he intends to chase another world title in his weight division.`
     },
     {
+      category: 'Boxing',
+
       title: `Lomachenko: Everyone is Waiting For Rematch With Lopez - Let's Make It!`,
       image: `https://cdn.vox-cdn.com/thumbor/cmkMhaS-WhgA8UOVjiy4pkV-v5E=/0x0:3000x2132/1200x800/filters:focal(1207x0:1687x480)/cdn.vox-cdn.com/uploads/chorus_image/image/69509882/1280838899.0.jpg`,
       content: `Former three division world champion Vasiliy Lomachenko is looking for payback.
@@ -138,6 +147,8 @@ const main = async () => {
         “He has a fight in the future with Kambosos, but how about after, in the beginning of next year? December, January, February, I am waiting.”`
     },
     {
+      category: 'Boxing',
+
       title: `Tyson Fury vs Deontay Wilder`,
       image: `https://cdn.vox-cdn.com/thumbor/F3rDo7XF_kVGwJNMJaFEx-pJcP8=/0x0:2978x1907/1400x933/filters:focal(1170x240:1646x716):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/69308047/1202740857.0.jpg`,
       content: `Pay-Per-View Event, by ESPN and Fox Sports.
@@ -147,6 +158,8 @@ const main = async () => {
         The eight-round PPV opener will see Toledo-born Jared “The Real Big Baby” Anderson step up in class against undefeated Russian contender Vladimir Tereshkin.`
     },
     {
+      category: 'Boxing',
+
       title: `Joshua Preparing For Usyk's Movement, Plans To Be Trim For The Fight`,
       image: `https://www.boxingscene.com/uploads/anthony-joshua%20(3)_2020_12_10_003327.jpg`,
       content: `IBF, IBO, WBA, WBO heavyweight champion Anthony Joshua is taking every possible measure in his ongoing training camp, as he prepares for the mandatory defense against Oleksandr Usyk.
@@ -170,6 +183,8 @@ const main = async () => {
         "I've been training like a 15-round fighter in this camp. I will be well-conditioned to fight. That is key. What happens when I train that way? My body adapts and takes its natural form. This is the form it has taken."`
     },
     {
+      category: 'Boxing',
+
       title: `Muhammad Ali's Place in Boxing History`,
       image: `https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2016/06/04/Web-Resampled/2016-06-04/1368864311465001651-kCMG--606x404@wp.com.jpg?t=20170517`,
       content: `How would Muhammad Ali Rate?
@@ -223,6 +238,8 @@ const main = async () => {
         Ali was more than just a fighter for he became a political symbol outside the ring and his impact was felt throughout the entire society. Very few fighters could claim a similar impact. There were no other fighters whose impact was similar outside the ring with the exception of one- Joe Louis.`
     },
     {
+      category: 'Boxing',
+
       title: `Report: Canelo-Plant Reach Terms For Historic Undisputed Super Middleweight Championship Clash`,
       image: `https://image-cdn.essentiallysports.com/wp-content/uploads/BDDNDEJEJR4.png`,
       content: `UPDATE [4:00 P.M. ET]: Saul 'Canelo' Alvarez has since confirmed the bout is set for November 6 at MGM Grand Garden Arena in Las Vegas.
@@ -268,6 +285,8 @@ const main = async () => {
         The unbeaten super middleweight celebrated his two-year anniversary with his most recent win, a twelve-round shutout of former titlist Caleb Truax this past January in Los Angeles. The bout aired live on Fox, as did preceding title defending knockout wins over Mike Lee (July 2019) and Vincent Feigenbutz (February 2020) for Plant, who will make far and away his biggest career payday in the upcoming showdown with Alvarez.`
     },
     {
+      category: 'Boxing',
+
       title: `Mike Tyson in A Boy Band?`,
       image: `https://i2.wp.com/www.gosports.com.my/wp-content/uploads/2020/10/Mike-Tyson.jpg?fit=980%2C551&ssl=1`,
       content: `By Mark Vester
