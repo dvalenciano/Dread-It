@@ -33,12 +33,5 @@ app.get('/football/articles', topicController.getArticleFootball)
 
 app.get('/soccer/articles', topicController.getArticleSoccer)
 
-
-
-
-
-
-
-
 // End Your Code Here
 app.listen(PORT, () => console.log(`Server Listening on port: ${PORT}`))
