@@ -42,19 +42,19 @@ const App = () => {
         <main>
           <Switch>
 
-            <Route exact path='/' component={
+            <Route exact path='/' component={() =>
               <Homepage soccerPosts={soccerArticles} footballposts={footballArticles} boxingPosts={boxingArticles}/>
               } />
 
-            <Route path='/soccer' component={
+            <Route path='/soccer' component={() =>
               <SoccerArticles soccerArticles={soccerArticles} />
             } />
 
-            <Route path='/football' component={
+            <Route path='/football' component={() =>
               <FootballArticles footballArticles={footballArticles} />
             } />
 
-            <Route path='/boxing' component={
+            <Route path='/boxing' component={() =>
               <BoxingArticles boxingArticles={boxingArticles} />
             } />
 
