@@ -1,5 +1,4 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const { Schema } = require('mongoose')
 
 const Post = new Schema(
   {
@@ -19,9 +18,4 @@ const Post = new Schema(
   { timestamps: true }
 )
 
-module.exports = mongoose.models(
-  'soccerArticles',
-  'boxingArticles',
-  'footballArticles',
-  Post
-)
+module.exports = Post
