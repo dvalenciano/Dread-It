@@ -4,8 +4,13 @@ const { SoccerArticle } = require('../models')
 const { BoxingArticle } = require('../models')
 
 const getBoxing = async (req, res) => {
-  console.log(BoxingArticle.findOne({}))
-  // const boxing = await BoxingArticle.findOne()
+  console.log('this func has fired')
+  const boxing = await BoxingArticle.find()
+  if (boxing) {
+    console.log(boxing)
+  } else {
+    console.log('nothing found')
+  }
   // console.log(boxing)
   // res.json(boxing)
 }
