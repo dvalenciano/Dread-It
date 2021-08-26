@@ -1,5 +1,5 @@
 const db = require('../db')
-const Post = require('../models/post')
+const { BoxingArticle } = require('../models/')
 
 const main = async () => {
   const boxingArticles = [
@@ -281,7 +281,7 @@ const main = async () => {
       A spokesman for the band says, "This sounds really interesting. The band are all fans of Tyson."`
     }
   ]
-  await Post.insertMany(boxingArticles)
+  await BoxingArticle.insertMany(boxingArticles)
   console.log('Soccer Articles added to db')
 }
 const run = async () => {
