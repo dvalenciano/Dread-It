@@ -18,3 +18,10 @@ const Post = new Schema(
   },
   { timestamps: true }
 )
+
+module.exports = mongoose.models(
+  'soccerArticles',
+  'boxingArticles',
+  'footballArticles',
+  Post
+)
