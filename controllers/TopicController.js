@@ -4,7 +4,7 @@ const getBoxing = (req, res)=>{
   })
 }
 
-const getFutbol = (req, res)=>{
+const getSoccer = (req, res)=>{
   res.send({
     
   })
@@ -21,5 +21,5 @@ const getFootball = (req, res)=>{
 module.exports = {
   getBoxing,
   getFootball,
-  getFutbol
+  getSoccer
 }
