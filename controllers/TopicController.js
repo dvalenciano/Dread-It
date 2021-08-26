@@ -1,16 +1,19 @@
 const post = require('../models/post')
-const { FootballArticle } = require('./models')
-const { SoccerArticle } = require('./models')
-const { BoxingArticle } = require('./models')
+const { FootballArticle } = require('../models')
+const { SoccerArticle } = require('../models')
+const { BoxingArticle } = require('../models')
 
 const getBoxing = async (req, res) => {
-  const boxing = await BoxingArticle.find()
-  res.json(boxing)
+  console.log(BoxingArticle.findOne({}))
+  // const boxing = await BoxingArticle.findOne()
+  // console.log(boxing)
+  // res.json(boxing)
 }
 
 const getSoccer = async (req, res) => {
   const soccer = await SoccerArticle.find()
-  res.json(soccer)
+  console.log(soccer)
+  // res.json(soccer)
 }
 
 const getFootball = async (req, res) => {
