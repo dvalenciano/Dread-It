@@ -387,7 +387,7 @@ const main = async () => {
     }
   ]
 
-  await Post.insertMany(footballArticles)
+  await PostF.insertMany(footballArticles)
   console.log('Football articles added')
 }
 const run = async () => {

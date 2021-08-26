@@ -23,7 +23,11 @@ app.get('/football', topicController.getFootball)
 
 app.get('/soccer', topicController.getSoccer)
 
+app.get('/boxing/articles', topicController.getArticleBoxing)
 
+app.get('/football/articles', topicController.getArticleFootball)
+
+app.get('/soccer/articles', topicController.getArticleSoccer)
 
 
 
