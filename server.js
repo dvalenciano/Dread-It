@@ -2,9 +2,9 @@ const express = require('express')
 const logger = require('morgan')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const { FootballArticle } = require('../models')
-const { SoccerArticle } = require('../models')
-const { BoxingArticle } = require('../models/')
+const { FootballArticle } = require('./models')
+const { SoccerArticle } = require('./models')
+const { BoxingArticle } = require('./models/')
 
 const PORT = process.env.PORT || 3001
 
@@ -32,13 +32,6 @@ app.get('/boxing/articles', topicController.getArticleBoxing)
 app.get('/football/articles', topicController.getArticleFootball)
 
 app.get('/soccer/articles', topicController.getArticleSoccer)
-
-
-
-
-
-
-
 
 // End Your Code Here
 app.listen(PORT, () => console.log(`Server Listening on port: ${PORT}`))
