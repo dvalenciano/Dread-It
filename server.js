@@ -2,6 +2,7 @@ const express = require('express')
 const logger = require('morgan')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+
 const PORT = process.env.PORT || 3001
 
 const topicController = require('./controllers/TopicController')
