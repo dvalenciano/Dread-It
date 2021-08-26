@@ -1,16 +1,16 @@
 const post = require("../models/post")
 
-const getBoxing = (req, res)=>{
+const getBoxing = async (req, res)=>{
   const boxing = await BoxingArticle.find()
   res.json(boxing)
 }
 
-const getSoccer = (req, res)=>{
+const getSoccer = async (req, res)=>{
   const soccer = await SoccerArticle.find()
   res.json(soccer)
 }
 
-const getFootball = (req, res)=>{
+const getFootball = async (req, res)=>{
   const football = await FootballArticle.find()
   res.json(football)
 }
