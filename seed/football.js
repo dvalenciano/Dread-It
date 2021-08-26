@@ -6,12 +6,14 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const main = async () => {
   const footballArticles = [
     {
+      category: `Football`,
       title: 'Mississippi State lands commitment from 2022 DB out of Georgia',
       image: './ArticleImages/FootballA1.png',
       content:
         'The Mississippi State Bulldogs dipped into fellow Bulldog territory to land their latest 2022 commitment. This latest commitment comes via 3-star 2022 CB Audavion Collins, a native of Newton High School in Covington, Georgia. Collins announced his decision on a Twitter stream, picking Mississippi State over Indiana, Tennessee, UCF and Michigan State. Collins is the No. 112 cornerback in the class of 2022 and the No. 106 overall recruit from the state of Georgia. The Bulldogs now have 18 players in their 2022 recruiting class, which currently ranks No.27 in the nation and No.9 in the SEC, per 247Sports.'
     },
     {
+      category: 'Football',
       title: `Nick Saban's greatest strength has nothing to do with football`,
       image: `https://www.saturdaydownsouth.com/wp-content/uploads/2021/04/USATSI_15498067-962x536.jpg`,
       content: `Just when it seemed at least plausible that Nick Saban could be passed up by the very aspects of college football he would seem to detest, the Alabama head coach has adapted and will very likely become more successful — if that’s even possible.
@@ -51,6 +53,8 @@ const main = async () => {
       On the surface, all of the recent changes would have seemed to derail Saban considering his old-school approach. Nope. Instead, the changes have shown Saban’s true genius: his adaptability.`
     },
     {
+      category: 'Football',
+
       title: `AP Top 25 Poll Week 1: 5 SEC teams ranked in top 25`,
       image: `https://www.saturdaydownsouth.com/wp-content/uploads/2020/12/APTop25Image-SDS-962x536.jpg`,
       content: `The debut AP Poll for the 2021 college football season was released on Monday at noon.
@@ -90,6 +94,8 @@ const main = async () => {
         Also receiving votes: Oklahoma State 107, Ole Miss 106, TCU 40, Liberty 36, Auburn 32, North Carolina State 14, Michigan 12, Northwestern 8, Boise State 7, Nevada 7, Brigham Young 6, Ball State 6, Houston 5, Boston College 5, UCF 5, West Virginia 3, UAB 2, Army 2, UCLA 2`
     },
     {
+      category: 'Football',
+
       title: `Bayou to Baton Rouge, Ed Orgeron is the People's King of Louisiana football`,
       image: `https://www.saturdaydownsouth.com/wp-content/uploads/2018/05/M2A0228-962x536.jpg`,
       content: `Nearly overnight, Ed Orgeron became the most popular guy in the state of Louisiana. Fans refer to him as “A Man of the People.” But in some places, it runs much deeper than that.
@@ -230,6 +236,8 @@ const main = async () => {
         Hope.`
     },
     {
+      category: 'Football',
+
       title: `Dan Mullen explains how the Florida secondary is growing alongside budding leader Kaiir Elam`,
       image: `https://s3media.247sports.com/Uploads/Assets/882/590/9590882.jpg`,
       content: `Kaiir Elam was named a second-team All-American by the Associated Press on Monday and is becoming a go-to player in the Florida secondary.
@@ -245,6 +253,8 @@ const main = async () => {
         “They’ve grown up a little bit, but there’s a lot of scenarios guys haven’t been in,” Mullen said of the other defensive backs. “There’s a bunch of guys in the secondary that haven’t been in scenarios. Kaiir’s been in situations, Trey Dean’s been in situations, Rashad Torrence’s been in situations, Tre’vez Johnson’s been in some situations. None of the other guys have really been in those situations before.”`
     },
     {
+      category: 'Football',
+
       title: `Tennessee announces COVID-19 procedures for Neyland Stadium attendees`,
       image: `http://footballstadiumdigest.com/wp-content/uploads/2016/10/Neyland-Stadium.jpg`,
       content: `While it remains to be seen just how many Tennessee fans will be attending home games this season, we now know how COVID-19 will affect the faithful at Neyland Stadium.
@@ -258,6 +268,8 @@ const main = async () => {
         The Vols host Bowling Green to open the season on Sept. 2. In order to boost attendance, UT has announced that student tickets will come with a “buddy” pass. It remains to be seen if the “buddy” pass will still be in effect during the remainder of the home schedule when the Vols host Pittsburgh, Tennessee Tech, South Carolina, Ole Miss, Georgia, South Alabama and Vanderbilt.`
     },
     {
+      category: 'Football',
+
       title: `Tennessee promotes new fan experiences at Neyland Stadium this season`,
       image: `https://www.saturdaydownsouth.com/wp-content/uploads/2019/10/USATSI_13468897.jpg`,
       content: `Tennessee will begin its 125th football season and 100th at storied Neyland Stadium on Thursday, Sept. 2, against Bowling Green, and the Volunteers athletics department is doing everything it can to make it a memorable season for the fans from an experience standpoint.
@@ -271,6 +283,8 @@ const main = async () => {
         Outside of Gate 9, Tennessee will host Truly’s Tailgate, which will open several hours before kickoff and provide fans with food and drink throughout the game. Additionally, former Vol Sterling Henton, who’s now known as DJ “Sterl The Pearl” will be mixing tunes at Truly’s before the game and then taking his energetic act to the field level during the game.`
     },
     {
+      category: 'Football',
+
       title: `Is this working? 2021 best- and worst-case scenarios for MSU`,
       image: `https://www.saturdaydownsouth.com/wp-content/uploads/2021/08/USATSI_15308263-962x536.jpg`,
       content: `In 2021, two coaches removed from Dan Mullen, the Mississippi State fan base could stand to employ more of their famously reasonable expectations and the coaching staff might consider preaching patience.
@@ -354,6 +368,8 @@ const main = async () => {
         The likely candidate feels like Texas A&M. The Aggies still have the skeleton of their Big 12 roots defensively. Secondly, the Bulldogs come to town right between the Southwestern Classic against Arkansas in Dallas and a huge game at home against Alabama.`
     },
     {
+      category: 'Football',
+
       title: `Mike Leach talks improved running game, OL ahead of scrimmage`,
       image: `https://cdispatch.com/wp-content/uploads/2021/04/Walley-MSU-1024x683.jpg`,
       content: `Mike Leach sees Mississippi State having an improved running game this season, and the next time he can measure improvement comes in Saturday’s scrimmage.
@@ -375,6 +391,8 @@ const main = async () => {
         “Execution on both sides of the ball, which pretty much means both sides are pissed, because they would have liked more plays…would have like to be more explosive…more success on their side of the ball,” Leach said. “Competitive, dynamic consistent play, that isn’t streaky or in spurts.”`
     },
     {
+      category: 'Football',
+
       title: `Ole Miss lands midnight commitment from mammoth in-state offensive tackle`,
       image: `https://cdn.vox-cdn.com/thumbor/Ua2jNUEi-J57eOwo5U5qXjy6nLk=/0x0:2999x1687/1200x800/filters:focal(1261x605:1739x1083)/cdn.vox-cdn.com/uploads/chorus_image/image/69772358/25d4209b_c217_44a7_9af2_0c5b5ea2f879_Bryson_Hurst__1_.0.jpeg`,
       content: `Ole Miss picked up a commitment from Bryson Hurst, a 6-foot-6 and 320 pounder out of Gautier, Mississippi, a midnight pickup for the Rebels on Wednesday morning as the Rebels bolster their 2022 class.

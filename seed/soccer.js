@@ -6,6 +6,8 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const main = async () => {
   const soccerArticles = [
     {
+      category: 'Soccer',
+
       title: `Carli Lloyd says USWNT needed to struggle to realize it’s time to pass the baton`,
       image: `https://ca-times.brightspotcdn.com/dims4/default/635e36c/2147483647/strip/true/crop/2917x1945+0+0/resize/840x560!/format/webp/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fc9%2Ffd%2F25a0440e4575a5b8a3ea9762bbca%2Ftokyo-olympics-soccer-44016.jpg`,
       content: `Hello and welcome to the L.A. Times soccer newsletter. I’m Kevin Baxter, the Times’ soccer writer, and as you read this, I should be 36,000 feet over the Pacific and winging my way back from the Tokyo Olympics.
@@ -41,6 +43,8 @@ const main = async () => {
             It’s time to let others continue that fight.`
     },
     {
+      category: 'Soccer',
+
       title: `Lionel Messi signs contract with Paris Saint-Germain`,
 
       image: `https://www.ligue1.com/-/media/Project/LFP/Ligue1-COM/Images/Articles-Assests/2021/08/10/Desktop_2122_UK_L1_Paris_Messi_shirt_Parc_signature.jpg?h=1035&la=en&w=2000&hash=BDC8D9B6B863A10C688D9B846824CF29`,
@@ -85,6 +89,8 @@ const main = async () => {
             PSG will be hoping not only that Messi helps the team regain the French title it lost to Lille last season, but finally win the Champions League.`
     },
     {
+      category: 'Soccer',
+
       title: `Soccer improves health, fitness and social abilities`,
 
       image: `http://soccertoday.com/wp-content/uploads/2018/07/Sports-Science-and-Soccer.jpg`,
@@ -122,6 +128,8 @@ const main = async () => {
             F-MARC, the research unit of FIFA, is a central partner in the project and the research provides scientific documentation for initiatives such as FIFA's newly launched "The 11 for Health" campaign that uses soccer as an educational health tool for children in order to raise awareness and improve health in African and South American communities. Also Michelle Obama's "Let's Move" project aiming at eliminating obesity in American children through diet and sports have recently promoted soccer as a favourable activity. The research results are also used in Europe, where the research group is directly involved in implementing the results through projects focusing on adults and children, such as "The Open Soccer Club project," "The Soccer at Work project" and the "Intensity in Pupil School Sport project." Sports Confederations, Football Associations, Ministries of Culture and Health and researchers from Universities, Hospitals and Centres for Working Environment are cooperating about the implementation and scientific evaluation of those projects.`
     },
     {
+      category: 'Soccer',
+
       title: `Pep Guardiola reveals plans to leave Man City in 2023 for a national team`,
       image: `https://i.guim.co.uk/img/media/479401244e578ea4926ac34475ecf0d545fffb51/0_332_3893_2336/master/3893.jpg?width=620&quality=85&auto=format&fit=max&s=e65a46e44f82b9d14850db1316a87a69`,
       content: `Pep Guardiola has said he plans to leave Manchester City when his current contract runs out in 2023. The 50-year-old Spaniard, who joined City in 2016 and has won three Premier League titles, feels he will need a rest after seven years in charge.
@@ -138,6 +146,8 @@ const main = async () => {
         His comments will come as a further blow to the City hierarchy on the day their pursuit of Harry Kane ended, with the England captain confirming he would be staying at Tottenham this summer.`
     },
     {
+      category: 'Soccer',
+
       title: `PSG reject Real Madrid’s £137m bid for Kylian Mbappé but admit he wants to go`,
       image: `https://i.guim.co.uk/img/media/d0084a0ef0212cae947364487814dc6f7274f07a/87_0_3473_2086/master/3473.jpg?width=620&quality=85&auto=format&fit=max&s=44cb611154ab7f4ac55372609dd50f61`,
       content: `Spanish and French media reported on Tuesday that Real Madrid had made a €160m (£137m) bid for the 22-year-old World Cup winner who scored 42 goals in all competitions for PSG last season and has reportedly said he wants to move to Spain.
@@ -149,6 +159,8 @@ const main = async () => {
         Leonardo would not confirm the figure of €160m but said the bid was “around that”. “We consider the offer as being very far from what Kylian is worth today,” he added. Mbappé joined PSG from AS Monaco in 2017, on loan initially and then permanently a year later in a deal valued at €180m.`
     },
     {
+      category: 'Soccer',
+
       title: `'He was dangerous throughout the game': Tuchel pleased with Lukaku debut`,
       image: `https://d3vlf99qeg6bpx.cloudfront.net/content/uploads/2021/08/23102457/romelu-lukaku-saluting-the-chelsea-fans-versus-arsenal-2021.jpg`,
       content: `Chelsea manager Thomas Tuchel was pleased with Romelu Lukaku's dominant display against Arsenal in his first game back as a Chelsea player. 
@@ -158,6 +170,8 @@ const main = async () => {
         'It was a very good start. Of course, that's important when your a striker scores straightaway – and scores straightaway an important goal to bring the lead.'`
     },
     {
+      category: 'Soccer',
+
       title: `Players not released for FIFA World Cup qualifiers: Explaining the moves by Premier League, La Liga`,
       image: `https://images.daznservices.com/di/library/sportin…c41m6q6dn922fe4.jpg?t=2117632587&w=720&quality=80`,
       content: `The English Premier League’s decision not to release players for World Cup qualifiers played in the UK’s red-list countries is set to impact multiple national teams battling for a berth in the 2022 FIFA World Cup.
@@ -170,6 +184,8 @@ const main = async () => {
         Spain’s La Liga followed the Premier League’s lead and announced that it would support its clubs’ decision not to release players who were called up by their South American nations. La Liga clubs and other members of the European Club Association (ECA) are particularly incensed because on Aug. 6 FIFA extended the South American international window by three days in September and October to allow for the playing of two rounds of World Cup qualifiers that were canceled because of the pandemic.`
     },
     {
+      category: 'Soccer',
+
       title: `When is the Champions League draw? How to watch 2021 UCL group stage reveal in USA`,
       image: `https://images.daznservices.com/di/library/sportin…m11ca5oi7p4pmu.jpg?t=-2089118325&w=720&quality=80`,
       content: `The 32 team names will be split up into four different pots and a name will be drawn from each to give shape to the eight Champions League groups. The one major caveat: No club can play a team from its own country in the group stage.
@@ -177,6 +193,8 @@ const main = async () => {
         Each team will play a total of six group-stage matches with the top two teams in each group advancing to the Champions League Round of 16 in February 2022. The team that finishes in third place in each group is eliminated, but the consolation prize is that it will drop into the UEFA Europa League knockout stage to face one of the Europa League group-stage runners-up.`
     },
     {
+      category: 'Soccer',
+
       title: `Who will win Serie A? Juventus favorites again in 2021-22`,
       image: `https://images.daznservices.com/di/library/sporting_news/5e/1d/serie-a-2021-2022-ronaldo-zlatan-lautaro_1i34csrkiyd3u10o4nqinh3lp8.jpeg?t=1717206619&w=720&quality=80`,
       content: `A new Serie A season kicks off Saturday, Aug. 21, and after having to watch a rival claim the title it owned for nine straight seasons, Juventus will look to reclaim its position as the best team in Italy entering the campaign as the clear-cut favorite.
@@ -186,6 +204,8 @@ const main = async () => {
         Many are predicting a tough season for cash-challenged champion Inter, which lost its coach (Antonio Conte) and was compelled to transfer its top scorer (Romelu Lukaku) and last season's revelation (Achraf Hakimi) to balance the budget during the summer. Meanwhile, second-place finisher AC Milan has kept its squad and added a handful of reinforcements. Atalanta looks poised to compete for a top-four spot again, while AS Roma, Lazio and Napoli will hope that a change in manager can transform them into serious contenders.`
     },
     {
+      category: 'Soccer',
+
       title: `What are Cristiano Ronaldo's diet, workout and fitness secrets?`,
       image: `https://images.daznservices.com/di/library/GOAL/a8/33/cristiano-ronaldo-portugal-euro-2020_1f6il2n3tdi6k14aqq6u261e4e.jpg?t=355741914&w=720&quality=80`,
       content: `There is no player in world football that has drawn more plaudits for his physical qualities and dedication to his craft than Cristiano Ronaldo.
@@ -238,6 +258,8 @@ const main = async () => {
         Says Professor Littlehales in his book "Sleep: The Myth of 8 Hours, the Power of Naps... and the New Plan to Recharge Your Body and Mind": it is better for athletes to take five naps each day consisting of 90 minutes each instead of a full night's sleep.`
     },
     {
+      category: 'Soccer',
+
       title: `CONCACAF 2022 World Cup Qualifying: Schedule, standings and TV for soccer Octagonal`,
       image: `https://images.daznservices.com/di/library/sportin…bmj16uhxvaiznup2.jpg?t=343450490&w=720&quality=80`,
       content: `The field is set. Eight nations from the CONCACAF region (North America, Central America and the Caribbean) will compete for three automatic berths to the 2022 Qatar World Cup in the final "octagonal" qualifying round.
