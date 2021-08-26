@@ -386,4 +386,13 @@ const main = async () => {
         Hurst is the third offensive lineman recruit to commit to the Rebels, and he was recruited by offensive line coach Jake Thornton and cornerbacks coach Terrell Buckley.`
     }
   ]
+
+  await Post.insertMany(footballArticles)
+  console.log('Football articles added')
 }
+const run = async () => {
+  await main()
+  db.close()
+}
+
+run()
