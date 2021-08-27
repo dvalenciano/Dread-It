@@ -1,5 +1,8 @@
 const db = require('../db')
-const { BoxingArticle } = require('../models/')
+const { Post } = require('../models/')
+
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
+
 
 const main = async () => {
   const boxingArticles = [
@@ -300,7 +303,7 @@ const main = async () => {
       A spokesman for the band says, "This sounds really interesting. The band are all fans of Tyson."`
     }
   ]
-  await BoxingArticle.insertMany(boxingArticles)
+  await Post.insertMany(boxingArticles)
   console.log('Soccer Articles added to db')
 }
 const run = async () => {

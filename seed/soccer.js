@@ -1,5 +1,5 @@
-const db = require('../db').default
-const { SoccerArticle } = require('../models')
+const db = require('../db')
+const { Post } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -271,7 +271,7 @@ const main = async () => {
         The Qatar World Cup will be played from Nov. 21 to Dec. 18, 2022.`
     }
   ]
-  await SoccerArticle.insertMany(soccerArticles)
+  await Post.insertMany(soccerArticles)
   console.log('Soccer Articles added to db')
 }
 
