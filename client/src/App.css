@@ -17,16 +17,26 @@ header {
 }
 
 .left-nav {
-  align-self: flex-start;
+  display: flex;
+  /* align-self: flex-start; */
 }
 
 .right-nav {
-  align-self: center;
+  /* align-self: center; */
   display: flex;
   justify-content: flex-end;
 }
 
-.homepage, .trending, .articles {
+.homepage {
   border: 1px solid black;
+  border-radius: 15px;
+}
+.trending {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.articles {
+  border: 1px solid black;
+  border-radius: 15px;
   /* background-color: blue; */
 }
