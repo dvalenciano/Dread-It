@@ -20,8 +20,8 @@ const App = () => {
     try {
       
       const res = await axios.get(`http://localhost:3001/articles/soccer`)
-      console.log(res)
-      setSoccer(res)
+      console.log(res.data)
+      setSoccer(res.data)
     } catch (error) {
       console.log(error)
     }
@@ -30,8 +30,8 @@ const App = () => {
   const getFootball = async () => {
     try {
       const res = await axios.get(`http://localhost:3001/articles/football`)
-      console.log(res)
-      setFootball(res)
+      console.log(res.data)
+      setFootball(res.data)
       
     } catch (error) {
       console.log(error)
@@ -41,8 +41,8 @@ const App = () => {
   const getBoxing = async () => {
     try {
       const res = await axios.get(`http://localhost:3001/articles/boxing`)
-      console.log(res)
-      setBoxing(res)
+      console.log(res.data)
+      setBoxing(res.data)
       
     } catch (error) {
       console.log(error)

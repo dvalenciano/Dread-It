@@ -5,7 +5,7 @@ const BoxingArticles = ({boxingArticles}) => {
     <div>
       {
         boxingArticles.map(article => (
-          <Article {...article}/>
+          <Article article={article}/>
         ))
       }
     </div>
