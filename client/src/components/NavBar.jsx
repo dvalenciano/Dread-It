@@ -14,6 +14,7 @@ const NavBar = () => {
 
         <section className='right-nav'>
         <NavLink to='/soccer'>Soccer</NavLink>
+        
         <NavLink to='/football'>Football</NavLink>
         <NavLink to='/boxing'>Boxing</NavLink>
         </section>

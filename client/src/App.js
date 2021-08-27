@@ -15,11 +15,10 @@ const App = () => {
   const [soccerArticles, setSoccer] = useState([])
   const [footballArticles, setFootball] = useState([])
   const [boxingArticles, setBoxing] = useState([])
-  console.log()
+  console.log(setSoccer)
 
   const getSoccer = async () => {
     try {
-      
       const res = await axios.get(`http://localhost:3001/articles/soccer`)
       console.log(res.data)
       setSoccer(res.data)
@@ -33,7 +32,6 @@ const App = () => {
       const res = await axios.get(`http://localhost:3001/articles/football`)
       console.log(res.data)
       setFootball(res.data)
-      
     } catch (error) {
       console.log(error)
     }
@@ -44,11 +42,10 @@ const App = () => {
       const res = await axios.get(`http://localhost:3001/articles/boxing`)
       console.log(res.data)
       setBoxing(res.data)
-      
     } catch (error) {
       console.log(error)
+    }
   }
-}
 
   useEffect(() => {
     getSoccer()
