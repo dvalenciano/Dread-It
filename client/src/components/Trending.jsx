@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Trending = ({post}) => {
+const Trending = (props) => {
   
   return (
     <div className='trending'>
-      <img src={`${post.image}`} alt="" />
-      <h3>{post.title}</h3> 
+      <img src={`${props.image}`} alt="" />
+      <h3>{props.title}</h3> 
     </div>
   )
 }
