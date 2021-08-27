@@ -4,7 +4,7 @@ const Trending = ({post}) => {
   
   return (
     <div className='trending'>
-      <img src={post.image} alt="" />
+      <img src={`${post.image}`} alt="" />
       <h3>{post.title}</h3> 
     </div>
   )

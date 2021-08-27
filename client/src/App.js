@@ -45,7 +45,7 @@ const App = () => {
           <Switch>
 
             <Route exact path='/' component={() =>
-              <Homepage soccerPosts={soccerArticles} footballposts={footballArticles} boxingPosts={boxingArticles}/>
+              <Homepage soccerArticles={soccerArticles} footballArticles={footballArticles} boxingArticles={boxingArticles}/>
               } />
 
             <Route path='/soccer' component={() =>
