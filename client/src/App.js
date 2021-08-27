@@ -18,20 +18,37 @@ const App = () => {
   console.log()
 
   const getSoccer = async () => {
-    const res = await axios.get(`${BASE_URL}/articles/soccer`)
-    console.log(res)
-    setSoccer(res)
+    try {
+      
+      const res = await axios.get(`http://localhost:3001/articles/soccer`)
+      console.log(res)
+      setSoccer(res)
+    } catch (error) {
+      console.log(error)
+    }
   }
+
   const getFootball = async () => {
-    const res = await axios.get(`${BASE_URL}/articles/football`)
-    console.log(res)
-    setFootball(res)
+    try {
+      const res = await axios.get(`http://localhost:3001/articles/football`)
+      console.log(res)
+      setFootball(res)
+      
+    } catch (error) {
+      console.log(error)
+    }
   }
+
   const getBoxing = async () => {
-    const res = await axios.get(`${BASE_URL}/articles/boxing`)
-    console.log(res)
-    setBoxing(res)
+    try {
+      const res = await axios.get(`http://localhost:3001/articles/boxing`)
+      console.log(res)
+      setBoxing(res)
+      
+    } catch (error) {
+      console.log(error)
   }
+}
 
   useEffect(() => {
     getSoccer()
