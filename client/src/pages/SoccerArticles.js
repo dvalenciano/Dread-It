@@ -1,13 +1,11 @@
-import Article  from '../components/Article'
+import Article from '../components/Article'
 
-const SoccerArticles = ({soccerArticles}) => {
-  return(
+const SoccerArticles = ({ soccerArticles }) => {
+  return (
     <div>
-      {
-        soccerArticles.map(article => (
-          <Article key={article.id} article={article}/>
-        ))
-      }
+      {soccerArticles.map((article) => (
+        <Article key={article.id} article={article} />
+      ))}
     </div>
   )
 }

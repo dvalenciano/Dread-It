@@ -4,8 +4,8 @@ const Trending = (props) => {
   
   return (
     <div className='trending'>
-      <img src={`${props.image}`} alt="" />
-      <h3>{props.title}</h3> 
+      <img className = 'image' src={props.post.image} alt="" />
+      <h3>{props.post.title}</h3> 
     </div>
   )
 }
