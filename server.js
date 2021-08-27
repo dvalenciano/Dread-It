@@ -24,7 +24,6 @@ app.get('/', (request, response) => {
 
 //postArticles
 app.post('/articles', async (req, res) => {
-
   try {
     const articles = await new Post(req.body)
     await articles.save()
@@ -36,10 +35,9 @@ app.post('/articles', async (req, res) => {
 
 //getArticles
 app.get('/articles', async (req, res) => {
-  console.log('this func has fired')
   try {
     const articles = await Post.find()
-    console.log(articles)
+    // console.log(articles)
     return res.json(articles)
   } catch (error) {
     console.log(error)
@@ -48,10 +46,9 @@ app.get('/articles', async (req, res) => {
 
 //getArticlesCategories
 app.get('/articles/:category', async (req, res) => {
-  console.log('this func has fired')
   try {
     const articles = await Post.find({category: {$eq: req.params.category}})
-    console.log(articles)
+    // console.log(articles)
     return res.json(articles)
   } catch (error) {
     console.log(error)
