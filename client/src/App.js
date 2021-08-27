@@ -1,12 +1,12 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import { Route, Switch } from 'react-router-dom'
 
 import axios from 'axios'
 import { BASE_URL } from './globals'
 
-import NavBar from './components/NavBar';
-import Homepage from './pages/Homepage';
+import NavBar from './components/NavBar'
+import Homepage from './pages/Homepage'
 import SoccerArticles from './pages/SoccerArticles'
 import FootballArticles from './pages/FootballArticles'
 import BoxingArticles from './pages/BoxingArticles'
@@ -15,6 +15,7 @@ const App = () => {
   const [soccerArticles, setSoccer] = useState([])
   const [footballArticles, setFootball] = useState([])
   const [boxingArticles, setBoxing] = useState([])
+  console.log()
 
   const getSoccer = async () => {
     try {
@@ -58,29 +59,40 @@ const App = () => {
   return (
     <div className="App">
       <NavBar />
-        <main>
-          <Switch>
+      <main>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            component={() => (
+              <Homepage
+                soccerArticles={soccerArticles}
+                footballArticles={footballArticles}
+                boxingArticles={boxingArticles}
+              />
+            )}
+          />
 
-            <Route exact path='/' component={() =>
-              <Homepage soccerArticles={soccerArticles} footballArticles={footballArticles} boxingArticles={boxingArticles}/>
-              } />
+          <Route
+            path="/soccer"
+            component={() => <SoccerArticles soccerArticles={soccerArticles} />}
+          />
 
-            <Route path='/soccer' component={() =>
-              <SoccerArticles soccerArticles={soccerArticles} />
-            } />
-
-            <Route path='/football' component={() =>
+          <Route
+            path="/football"
+            component={() => (
               <FootballArticles footballArticles={footballArticles} />
-            } />
+            )}
+          />
 
-            <Route path='/boxing' component={() =>
-              <BoxingArticles boxingArticles={boxingArticles} />
-            } />
-
-          </Switch>
-        </main>
+          <Route
+            path="/boxing"
+            component={() => <BoxingArticles boxingArticles={boxingArticles} />}
+          />
+        </Switch>
+      </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
