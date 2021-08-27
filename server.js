@@ -55,6 +55,18 @@ app.get('/articles/:category', async (req, res) => {
   }
 })
 
+// getComments
+// app.get('/articles/:category/comments', async (req, res) => {
+//   try {
+//     const comments = await |||.find()
+//     // console.log(articles)
+//     return res.json(articles)
+//   } catch (error) {
+//     console.log(error)
+    
+//   }
+// })
+
 
 // End Your Code Here
 app.listen(PORT, () => console.log(`Server Listening on port: ${PORT}`))
