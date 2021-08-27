@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-let MONGODB_URI = 'mongodb://127.0.0.1:27017/dreaditDatabase'
+let MONGODB_URI = 'mongodb://127.0.0.1:27017/dreadDB'
 
 mongoose
   .connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true })

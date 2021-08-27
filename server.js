@@ -3,12 +3,12 @@ const logger = require('morgan')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
-const { Post } = require('./models')
+const { Post }  = require('./models/post')
+const db = require('./db')
+
 
 
 const PORT = process.env.PORT || 3001
-
-const topicController = require('./controllers/TopicController')
 
 const app = express()
 
@@ -16,38 +16,48 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(logger('dev'))
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 app.get('/', (request, response) => {
   response.send({ msg: 'Server Running' })
 })
 
-//getArticles
-app.get('/articles', async (req, res) => {
-  console.log('this func has fired')
-  const articles = await Post.find({})
-  if (articles) {
-    console.log(articles)
-    res.json(articles)
-  } else {
-    console.log('nothing found')
+//postArticles
+app.post('/articles', async (req, res) => {
+
+  try {
+    const articles = await new Post(req.body)
+    await articles.save()
+    return res.status(200).send(articles)
+  } catch (error) {
+    console.log(error)
   }
 })
 
-//getOneArticle
+//getArticles
+app.get('/articles', async (req, res) => {
+  console.log('this func has fired')
+  try {
+    const articles = await Post.find()
+    console.log(articles)
+    return res.json(articles)
+  } catch (error) {
+    console.log(error)
+  }
+})
 
-// app.get('/articles', topicController.getArticles)
+//getArticlesCategories
+app.get('/articles/:category', async (req, res) => {
+  console.log('this func has fired')
+  try {
+    const articles = await Post.find({category: {$eq: req.params.category}})
+    console.log(articles)
+    return res.json(articles)
+  } catch (error) {
+    console.log(error)
+  }
+})
 
-// app.get('/boxing', topicController.getBoxing)
-
-// app.get('/football', topicController.getFootball)
-
-// app.get('/soccer', topicController.getSoccer)
-
-// app.get('/boxing/articles', topicController.getArticleBoxing)
-
-// app.get('/football/articles', topicController.getArticleFootball)
-
-// app.get('/soccer/articles', topicController.getArticleSoccer)
 
 // End Your Code Here
 app.listen(PORT, () => console.log(`Server Listening on port: ${PORT}`))
