@@ -17,16 +17,18 @@ const App = () => {
   const [boxingArticles, setBoxing] = useState([])
 
   const getSoccer = async () => {
-    const res = await axios.get(`${BASE_URL}/`)
-    // console.log(res)
+    const res = await axios.get(`${BASE_URL}/articles/soccer`)
+    console.log(res)
     setSoccer(res)
   }
   const getFootball = async () => {
-    const res = await axios.get(`${BASE_URL}/`)
+    const res = await axios.get(`${BASE_URL}/articles/football`)
+    console.log(res)
     setFootball(res)
   }
   const getBoxing = async () => {
-    const res = await axios.get(`${BASE_URL}/`)
+    const res = await axios.get(`${BASE_URL}/articles/boxing`)
+    console.log(res)
     setBoxing(res)
   }
 
