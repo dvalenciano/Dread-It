@@ -1,5 +1,5 @@
-const db = require('../db')
-const { Post } = require('../models')
+const db = require('../db').default
+const { SoccerArticle } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -204,8 +204,6 @@ const main = async () => {
         Many are predicting a tough season for cash-challenged champion Inter, which lost its coach (Antonio Conte) and was compelled to transfer its top scorer (Romelu Lukaku) and last season's revelation (Achraf Hakimi) to balance the budget during the summer. Meanwhile, second-place finisher AC Milan has kept its squad and added a handful of reinforcements. Atalanta looks poised to compete for a top-four spot again, while AS Roma, Lazio and Napoli will hope that a change in manager can transform them into serious contenders.`
     },
     {
-      category: 'Soccer',
-
       title: `What are Cristiano Ronaldo's diet, workout and fitness secrets?`,
       image: `https://images.daznservices.com/di/library/GOAL/a8/33/cristiano-ronaldo-portugal-euro-2020_1f6il2n3tdi6k14aqq6u261e4e.jpg?t=355741914&w=720&quality=80`,
       content: `There is no player in world football that has drawn more plaudits for his physical qualities and dedication to his craft than Cristiano Ronaldo.
@@ -258,8 +256,6 @@ const main = async () => {
         Says Professor Littlehales in his book "Sleep: The Myth of 8 Hours, the Power of Naps... and the New Plan to Recharge Your Body and Mind": it is better for athletes to take five naps each day consisting of 90 minutes each instead of a full night's sleep.`
     },
     {
-      category: 'Soccer',
-
       title: `CONCACAF 2022 World Cup Qualifying: Schedule, standings and TV for soccer Octagonal`,
       image: `https://images.daznservices.com/di/library/sportin…bmj16uhxvaiznup2.jpg?t=343450490&w=720&quality=80`,
       content: `The field is set. Eight nations from the CONCACAF region (North America, Central America and the Caribbean) will compete for three automatic berths to the 2022 Qatar World Cup in the final "octagonal" qualifying round.
@@ -271,7 +267,7 @@ const main = async () => {
         The Qatar World Cup will be played from Nov. 21 to Dec. 18, 2022.`
     }
   ]
-  await Post.insertMany(soccerArticles)
+  await SoccerArticle.insertMany(soccerArticles)
   console.log('Soccer Articles added to db')
 }
 

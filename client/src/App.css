@@ -25,3 +25,8 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+
+.homepage, .trending, .articles {
+  border: 1px solid black;
+  /* background-color: blue; */
+}

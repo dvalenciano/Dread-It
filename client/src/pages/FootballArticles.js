@@ -5,7 +5,7 @@ const FootballArticles = ({footballArticles}) => {
     <div>
       {
         footballArticles.map(article => (
-          <Article {...article}/>
+          <Article key={article.id} article={article}/>
         ))
       }
     </div>
