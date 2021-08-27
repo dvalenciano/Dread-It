@@ -3,7 +3,7 @@
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   box-sizing: border-box;
-  background-color:  lightcoral;
+  background-color: lightcoral;
 }
 
 .App {
@@ -11,18 +11,11 @@
   width: auto;
   margin: 5px;
 }
-<<<<<<< HEAD
-header {
-  display: flex;
-}
-.nav {
-=======
 
 .nav-bar {
->>>>>>> 6470ce3fb98f80ca360f9db70ac9ea1d4271158b
   display: flex;
   justify-content: space-between;
-  
+
   color: white;
 }
 
@@ -31,40 +24,18 @@ header {
 }
 
 .left-nav {
-<<<<<<< HEAD
-  display: flex;
-  /* align-self: flex-start; */
-=======
-   align-self: flex-start;
+  align-self: flex-start;
   background-color: black;
->>>>>>> 6470ce3fb98f80ca360f9db70ac9ea1d4271158b
 }
 
 .right-nav {
   /* align-self: center; */
   display: flex;
-<<<<<<< HEAD
-  justify-content: flex-end;
-}
-
-.homepage {
-  border: 1px solid black;
-  border-radius: 15px;
-}
-.trending {
-  border: 1px solid black;
-  border-radius: 15px;
-}
-.articles {
-  border: 1px solid black;
-  border-radius: 15px;
-  /* background-color: blue; */
-}
-=======
   justify-content: space-between;
-} 
+}
 
- .trending, .articles {
+.trending,
+.articles {
   border: 1px solid black;
   width: 250px;
   border-radius: 15px;
@@ -74,9 +45,8 @@ header {
 
 .image {
   border-radius: 15px;
-  width:400px;
-  height:100%;
+  width: 400px;
+  height: 100%;
   width: 100%;
   align-items: center;
 }
->>>>>>> 6470ce3fb98f80ca360f9db70ac9ea1d4271158b
