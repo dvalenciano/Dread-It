@@ -3,7 +3,7 @@
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   box-sizing: border-box;
-  background-color:  lightcoral;
+  background-color: lightcoral;
 }
 
 .App {
@@ -15,7 +15,7 @@
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  
+
   color: white;
 }
 
@@ -24,17 +24,18 @@
 }
 
 .left-nav {
-   align-self: flex-start;
+  align-self: flex-start;
   background-color: black;
 }
 
 .right-nav {
-  align-self: center;
+  /* align-self: center; */
   display: flex;
   justify-content: space-between;
-} 
+}
 
- .trending, .articles {
+.trending,
+.articles {
   border: 1px solid black;
   width: 250px;
   border-radius: 15px;
@@ -44,8 +45,8 @@
 
 .image {
   border-radius: 15px;
-  width:400px;
-  height:100%;
+  width: 400px;
+  height: 100%;
   width: 100%;
   align-items: center;
 }
